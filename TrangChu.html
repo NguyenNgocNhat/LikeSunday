@@ -1,0 +1,164 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Coffee LikeSunday - Trang chủ</title>
+<link rel="stylesheet" type="text/css" href="TrangChu.css"/>
+	
+	
+</head>
+<style>
+.mySlides {display:none}
+.left, .right, .badge {cursor:pointer}
+.badge {height:13px;width:13px;padding:0}
+</style>
+<body class="page-wrapper">
+	<header>
+		<div class="logo"><a href="Menu.html"><img src="Picture/Logo_menu.png" alt="LoGo"></a></div>
+		
+		<div class="left">
+		
+		</div>
+		<div class="left">
+			<nav>
+			<ul>
+				<li>
+					<a style="border-bottom: 3px solid #472626; padding-bottom: 6px;" href="TrangChu.html">TRANG CHỦ</a>
+				</li>
+				<li>
+					<a href="../Menu/Menu.html">MENU</a>
+				</li>
+				<li>
+					<a href="#">CỬA HÀNG</a>
+				</li>
+				<li>
+					<a href="#">LIÊN HỆ</a>
+				</li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		
+	</div>
+	<div style="padding-bottom: 30px; background-color: white;">
+		<div class="content display-container" style="max-width:100%">
+		  <img class="mySlides sliderpic" src="Picture/pt1.png" style="width:100%">
+		  <img class="mySlides sliderpic" src="Picture/pt2.jpg" style="width:100%">
+		  <img class="mySlides sliderpic" src="Picture/pt3.jpg" style="width:100%">
+		  <div class="center container section large text-white display-bottommiddle" style="width:100%">
+			<div class="left hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="right hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+			<span class="badge demo border transparent hover-white" onclick="currentDiv(1)"></span>
+			<span class="badge demo border transparent hover-white" onclick="currentDiv(2)"></span>
+			<span class="badge demo border transparent hover-white" onclick="currentDiv(3)"></span>
+		  </div>
+		</div>
+	</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " white";
+}
+</script>
+	<div class="gb-page-width gb-pad-top">
+		<div class="gb-tittle-and-des">
+			<h2 class="tittle">TOP THỨC UỐNG ĐƯỢC ƯA THÍCH </h2>
+			<div class="des">
+				Những món nước đặc sắc của LikeSunday
+			</div>
+		</div>
+		<div class="container_pic">
+			<a href="#"> 
+				<div class = "hover_pic">
+				<div class = "backgr item1">
+					<div class="content_nameofpic">
+						name of pic
+					</div>
+				</div>
+				</div>
+			</a>	
+			<a href="#">
+				<div class = "hover_pic">
+				<div class = "backgr item2">
+					<div class="content_nameofpic">
+						name of pic
+					</div>
+				</div>
+				</div>
+			</a>
+			<a href="#">	
+		  		<div class = "hover_pic">
+				<div class = "backgr item3">
+					<div class="content_nameofpic">
+						name of pic
+					</div>
+				</div>
+				</div>
+			</a>
+			<a href="#">	
+		  		<div class = "hover_pic">
+				<div class = "backgr item4">
+					<div class="content_nameofpic">
+						name of pic
+					</div>
+				</div>
+				</div>
+			</a>
+			<a href="#">	
+		  		<div class = "hover_pic">
+				<div class = "backgr item5">
+					<div class="content_nameofpic">
+						name of pic
+					</div>
+				</div>
+				</div>
+			</a>
+			<a href="#">	
+				<div class = "hover_pic">
+				<div class = "backgr item6">
+					<div class="content_nameofpic">
+						name of pic
+					</div>
+				</div>
+				</div>
+			</a>	
+		</div>
+		
+	</div>
+	<div class = "gb-page-width">
+		<div class="gb-tittle-and-des">
+			<h2 class="tittle">THỨC UỐNG CỦA LIKESUNDAY </h2>
+			<div class="des">
+				<i>Thức uống giải nhiệt cung cấp vitamin, canxi, magie, giúp bạn "boost" năng lượng đầu tuần thật hiệu quả!</i>
+			</div>
+		</div>
+		
+		<div class= "">
+			
+		</div>
+	</div>
+</body>
+</html>
